@@ -11,8 +11,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 24863529654-sqhgt5vok9c11ph6a6u5e27s6659pmog.apps.googleusercontent.com
-            client-secret: hRhiu0gSyDJ2TFrHBQw0AreZ
+            client-id: client-id
+            client-secret: cleint-secret
             scope:
             - openid
             - email
