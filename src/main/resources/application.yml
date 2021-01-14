@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: oauth2-spring-webflux
+  mvc:
+    view:
+      suffix: .html   
+  main:
+    allow-bean-definition-overriding: true   
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 24863529654-sqhgt5vok9c11ph6a6u5e27s6659pmog.apps.googleusercontent.com
+            client-secret: hRhiu0gSyDJ2TFrHBQw0AreZ
+            scope:
+            - openid
+            - email
+            redirect-uri: http://localhost:8181/home
+            authorization-grant-type: authorization_code
+server:
+  port: 8181 
+
+logging:
+  level:
+    org: 
+      springframework:
+        security: DEBUG 
+          
+          
+      
